@@ -1,0 +1,16 @@
+FUNCTION HitungTagihanListrik
+  DECLARE listrik, jumTagihan : INTEGER
+BEGIN
+ INPUT (listrik)
+ IF listrik <= 100
+ THEN
+   jumTagihan <- 2000 x listrik
+  ELSE IF listrik > 100 AND <= 200
+  THEN
+    jumTagihan <- 3000 x listrk
+  ELSE IF listrik > 200
+  THEN 
+    jumTagihan <- 5000 x listrik
+  ENDIF
+  OUTPUT("Jumlah tagihan yang harus dibayar : ", jumTagihan)
+END
