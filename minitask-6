@@ -7,10 +7,10 @@ BEGIN
     diskon <- 0
   ELSEIF jumBelanja >= 500.000 AND <= 1.000.000
   THEN
-    diskon <- 500.000 x 5%
+    diskon <- jumBelanja x 5%
   ELSEIF jumBelanja > 1.000.000
   THEN
-    diskon <- 500.000 x 10%
+    diskon <- jumBelanja x 10%
   ENDIF
   totBelanja <- jumBelanja - diskon
   OUTPUT("Total Belanja : ", totBelanja)
